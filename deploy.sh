@@ -6,17 +6,17 @@ mkdir -p $BASE/images
 cd $BASE
 
 REPO="twetwe1/sx-federation-handbook"
-V=20260904b
+V=20260904c
 MIRRORS=(
-  "https://cdn.jsdelivr.net/gh/$REPO@main?v=$V"
-  "https://fastly.jsdelivr.net/gh/$REPO@main?v=$V"
-  "https://raw.githubusercontent.com/$REPO/main?v=$V"
+  "https://cdn.jsdelivr.net/gh/$REPO@main"
+  "https://fastly.jsdelivr.net/gh/$REPO@main"
+  "https://raw.githubusercontent.com/$REPO/main"
 )
 
 dl(){  # dl <本地路径> <仓库相对路径>
   local out="$1" rel="$2" ok=0
   for m in "${MIRRORS[@]}"; do
-    if curl -fsSL --connect-timeout 15 -o "$out" "$m/$rel"; then echo "  ✅ $rel"; ok=1; break; fi
+    if curl -fsSL --connect-timeout 15 -o "$out" "$m/$rel?v=$V"; then echo "  ✅ $rel"; ok=1; break; fi
   done
   [ $ok -eq 1 ] || echo "  ⚠️ 下载失败: $rel（可截图发闺女）"
 }
