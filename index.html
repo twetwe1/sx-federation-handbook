@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>绍兴装饰联合会·双节家装狂欢节｜28家品牌联盟电子手册</title>
+<style>
+:root{
+  --bg:#FFF6E5;
+  --ink:#2B1200;
+  --red:#D2231E;
+  --red-dark:#A81410;
+  --gold:#F5B301;
+  --gold-light:#FFD45E;
+  --card:#FFFFFF;
+  --green:#1E8E5A;
+  --grey:#B9AE9E;
+  --border:3px solid var(--ink);
+  --shadow:5px 5px 0 var(--ink);
+  --shadow-sm:3px 3px 0 var(--ink);
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{
+  background:var(--bg);
+  color:var(--ink);
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC",system-ui,sans-serif;
+  line-height:1.65;
+  -webkit-text-size-adjust:100%;
+  overflow-x:hidden;
+}
+.wrap{max-width:680px;margin:0 auto;padding:0 14px 60px;}
+
+/* ===== 顶部 HERO ===== */
+.hero{
+  background:var(--red);
+  border-bottom:var(--border);
+  padding:28px 14px 30px;
+  text-align:center;
+  position:relative;
+  overflow:hidden;
+}
+.hero::before{
+  content:"";position:absolute;inset:0;
+  background-image:radial-gradient(rgba(255,255,255,.12) 2.5px,transparent 2.5px);
+  background-size:22px 22px;pointer-events:none;
+}
+/* ===== 金字大招牌 ===== */
+.plaque{
+  position:relative;
+  display:inline-block;
+  background:linear-gradient(180deg,#2A241C 0%,#16120E 100%);
+  border:3px solid var(--gold);
+  border-radius:10px;
+  box-shadow:7px 7px 0 rgba(0,0,0,.30), inset 0 0 0 2px rgba(245,179,1,.30);
+  padding:18px 24px 15px;
+  max-width:100%;
+}
+.plaque .inner-line{
+  position:absolute;inset:7px;
+  border:1px solid rgba(245,179,1,.45);
+  border-radius:6px;pointer-events:none;
+}
+.plaque::before,.plaque::after{
+  content:"";position:absolute;width:13px;height:13px;
+  border:3px solid var(--gold-light);z-index:1;
+}
+.plaque::before{top:5px;left:5px;border-right:0;border-bottom:0;}
+.plaque::after{bottom:5px;right:5px;border-left:0;border-top:0;}
+.plaque .plaque-tag{
+  display:block;color:var(--gold-light);
+  font-size:12px;font-weight:800;letter-spacing:3px;
+  margin-bottom:7px;position:relative;
+}
+.plaque h1{
+  position:relative;
+  font-size:clamp(31px,9.8vw,50px);
+  font-weight:900;line-height:1.18;
+  color:var(--gold);
+  letter-spacing:5px;
+  margin:0;
+  text-shadow:0 2px 0 rgba(0,0,0,.65), 0 0 18px rgba(245,179,1,.25);
+}
+.plaque .plaque-en{
+  display:block;color:#C9A24B;
+  font-size:9px;font-weight:700;letter-spacing:2.5px;
+  margin-top:8px;opacity:.9;position:relative;
+}
+.hero .sub{
+  position:relative;
+  background:var(--gold);color:var(--ink);
+  display:inline-block;font-weight:900;font-size:17px;
+  padding:8px 20px;border:var(--border);
+  box-shadow:var(--shadow-sm);
+  transform:rotate(-1deg);
+  margin-top:20px;letter-spacing:1px;
+}
+.hero .date{
+  position:relative;margin-top:14px;color:#FFE9C7;
+  font-size:14px;font-weight:700;letter-spacing:1px;
+}
+.hero .date b{color:var(--gold-light);font-size:16px;}
+
+/* ===== 福利贴纸条 ===== */
+.perks{
+  display:grid;grid-template-columns:repeat(2,1fr);gap:10px;
+  margin:18px 0 8px;
+}
+.perk{
+  background:var(--card);border:var(--border);box-shadow:var(--shadow-sm);
+  padding:12px 10px;text-align:center;font-weight:800;font-size:15px;
+  border-radius:6px;
+}
+.perk:nth-child(1){transform:rotate(-.8deg);}
+.perk:nth-child(2){transform:rotate(.6deg);}
+.perk:nth-child(3){transform:rotate(.5deg);}
+.perk:nth-child(4){transform:rotate(-.6deg);}
+.perk .ico{font-size:22px;display:block;margin-bottom:2px;}
+
+/* ===== 快捷导航 ===== */
+.navchips{
+  display:flex;gap:10px;overflow-x:auto;padding:14px 2px 10px;
+  -webkit-overflow-scrolling:touch;scrollbar-width:none;
+}
+.navchips::-webkit-scrollbar{display:none;}
+.chip{
+  flex:0 0 auto;background:var(--ink);color:#FFF;text-decoration:none;
+  font-weight:800;font-size:14px;padding:9px 16px;border-radius:999px;
+  border:2px solid var(--gold);white-space:nowrap;
+}
+.chip:active{transform:scale(.95);}
+
+/* ===== 分区标题 ===== */
+.section-tag{
+  display:flex;align-items:center;gap:10px;margin:26px 0 14px;
+}
+.section-tag .bar{
+  background:var(--red);color:#FFF;font-weight:900;font-size:17px;
+  padding:6px 16px;border:var(--border);box-shadow:var(--shadow-sm);
+  transform:rotate(-.8deg);white-space:nowrap;
+}
+.section-tag .line{flex:1;height:0;border-top:3px dashed var(--ink);opacity:.35;}
+
+/* ===== 商家卡 ===== */
+.shop{
+  background:var(--card);border:var(--border);border-radius:10px;
+  box-shadow:var(--shadow);margin-bottom:26px;overflow:hidden;
+}
+.shop-head{
+  display:flex;align-items:center;gap:10px;
+  padding:14px 16px 12px;border-bottom:var(--border);
+  background:var(--gold-light);
+}
+.shop-head .name{font-size:24px;font-weight:900;letter-spacing:1px;}
+.shop-head .tag{
+  margin-left:auto;background:var(--ink);color:var(--gold-light);
+  font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px;
+  white-space:nowrap;
+}
+.shop-head .ready{
+  position:absolute;
+}
+.shop-body{padding:14px 16px 16px;}
+/* 会长单位·首页C位卡 */
+#shop-nengqiang{
+  border:3px solid var(--gold);
+  box-shadow:6px 6px 0 var(--ink);
+  position:relative;
+}
+#shop-nengqiang .shop-head{
+  background:linear-gradient(90deg,#16120E 0%,#2A241C 100%);
+}
+#shop-nengqiang .shop-head .name{color:var(--gold);}
+#shop-nengqiang .shop-head .tag{
+  background:var(--gold);color:var(--ink);border-color:var(--ink);
+}
+.shop img{
+  width:100%;height:auto;display:block;
+  border:var(--border);border-radius:8px;margin-bottom:12px;
+}
+.deal{
+  background:var(--red);color:#FFF;border-radius:8px;
+  padding:12px 14px;margin-bottom:12px;border:var(--border);
+}
+.deal .deal-t{font-weight:900;font-size:17px;margin-bottom:4px;}
+.deal .deal-d{font-size:14px;color:#FFE3D6;}
+.deal .deal-time{
+  display:inline-block;margin-top:8px;background:var(--gold);color:var(--ink);
+  font-weight:800;font-size:13px;padding:3px 10px;border-radius:6px;
+}
+.pill-list{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 12px;}
+.pill{
+  background:var(--bg);border:2px solid var(--ink);
+  font-size:13px;font-weight:700;padding:4px 12px;border-radius:999px;
+}
+.addr{
+  display:flex;gap:8px;align-items:flex-start;
+  background:var(--bg);border:2px solid var(--ink);border-radius:8px;
+  padding:10px 12px;font-size:14px;font-weight:600;margin-bottom:12px;
+}
+.addr .pin{font-size:18px;line-height:1.4;}
+.btns{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+.btn{
+  display:flex;align-items:center;justify-content:center;gap:6px;width:100%;
+  text-decoration:none;font-family:inherit;font-weight:900;font-size:16px;
+  padding:13px 8px;border-radius:8px;border:var(--border);cursor:pointer;
+  box-shadow:var(--shadow-sm);transition:transform .08s,box-shadow .08s;
+}
+.btn:active{transform:translate(3px,3px);box-shadow:0 0 0 var(--ink);}
+.btn-call{background:var(--green);color:#FFF;}
+.btn-nav{background:var(--gold);color:var(--ink);}
+.btn-full{grid-column:1/-1;}
+
+/* 纽弗兰大字卡头 */
+.big-slogan{
+  background:var(--red);color:#FFF;border:var(--border);border-radius:8px;
+  text-align:center;padding:18px 14px;margin-bottom:12px;
+  background-image:radial-gradient(rgba(255,255,255,.12) 2px,transparent 2px);
+  background-size:18px 18px;
+}
+.big-slogan .y{font-size:30px;font-weight:900;letter-spacing:3px;line-height:1.3;}
+.big-slogan .s{font-size:14px;font-weight:700;color:var(--gold-light);margin-top:6px;}
+
+/* ===== 品牌墙 ===== */
+.wall{
+  background:var(--card);border:var(--border);border-radius:10px;
+  box-shadow:var(--shadow);padding:16px 14px 18px;margin-bottom:24px;
+}
+.wall-row{
+  display:flex;align-items:center;gap:8px;padding:9px 4px;
+  border-bottom:2px dashed #E8DCC8;
+}
+.wall-row:last-child{border-bottom:none;}
+.wall-row .grp{
+  flex:0 0 52px;font-weight:900;font-size:13px;color:var(--red-dark);
+  background:var(--gold-light);border:2px solid var(--ink);border-radius:6px;
+  text-align:center;padding:3px 0;
+}
+.wall-row .brands{flex:1;font-weight:800;font-size:15px;}
+.wall-row .brands .on{color:var(--red);}
+.wall-row .brands .off{color:var(--grey);}
+.wall-row .st{
+  flex:0 0 auto;font-size:12px;font-weight:800;padding:3px 9px;border-radius:999px;
+}
+.st-ok{background:var(--green);color:#FFF;}
+.st-wait{background:#EFE7D8;color:var(--grey);border:2px solid var(--grey);}
+
+/* ===== 进度条 + 底部 ===== */
+.progress-box{
+  background:var(--card);border:var(--border);border-radius:10px;
+  box-shadow:var(--shadow-sm);padding:16px;margin-bottom:20px;text-align:center;
+}
+.progress-box .pt{font-weight:900;font-size:16px;margin-bottom:10px;}
+.progress-track{
+  height:22px;border:var(--border);border-radius:999px;background:var(--bg);
+  overflow:hidden;position:relative;
+}
+.progress-fill{
+  height:100%;width:7.2%;background:repeating-linear-gradient(45deg,var(--red),var(--red) 10px,var(--red-dark) 10px,var(--red-dark) 20px);
+  border-right:var(--border);
+}
+.progress-num{margin-top:8px;font-size:13px;font-weight:700;color:var(--red-dark);}
+footer{
+  text-align:center;padding:18px 10px 10px;font-size:13px;color:#8A7A66;font-weight:600;
+}
+footer .org{
+  display:inline-block;background:var(--ink);color:var(--gold-light);
+  font-weight:800;font-size:14px;padding:6px 18px;border-radius:999px;margin-bottom:10px;
+}
+.totop{
+  position:fixed;right:16px;bottom:20px;width:48px;height:48px;
+  background:var(--gold);border:var(--border);border-radius:50%;
+  box-shadow:var(--shadow-sm);font-size:20px;font-weight:900;color:var(--ink);
+  display:flex;align-items:center;justify-content:center;text-decoration:none;
+  z-index:50;
+}
+.totop:active{transform:translate(2px,2px);box-shadow:1px 1px 0 var(--ink);}
+
+@media print{
+  .totop,.navchips{display:none;}
+  .shop,.wall,.progress-box{box-shadow:none;break-inside:avoid;}
+  body{background:#FFF;}
+}
+@media(min-width:720px){
+  .perks{grid-template-columns:repeat(4,1fr);}
+}
+a:focus-visible,button:focus-visible{
+  outline:3px solid var(--red);outline-offset:2px;
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto;}
+  *{transition:none !important;}
+}
+</style>
+</head>
+<body>
+
+<header class="hero" id="top">
+  <div class="plaque">
+    <span class="inner-line"></span>
+    <span class="plaque-tag">★ 28家品牌联盟 · 家装一站购齐 ★</span>
+    <h1>绍兴装饰联合会</h1>
+    <span class="plaque-en">SHAOXING DECORATION FEDERATION</span>
+  </div>
+  <div><span class="sub">双节家装狂欢节 · 中秋 × 国庆</span></div>
+  <div class="date">活动季：<b>2026年9月—10月</b>　各门店福利陆续开抢</div>
+</header>
+
+<main class="wrap">
+
+  <!-- 福利贴纸条 -->
+  <section class="perks" aria-label="活动四大福利">
+    <div class="perk"><span class="ico">🏷️</span>28家联盟价</div>
+    <div class="perk"><span class="ico">🎁</span>进店就有礼</div>
+    <div class="perk"><span class="ico">🤝</span>带单成交有补贴</div>
+    <div class="perk"><span class="ico">🏠</span>装修一次跑齐</div>
+  </section>
+
+  <!-- 快捷导航 -->
+  <nav class="navchips" aria-label="商家快捷导航">
+    <a class="chip" href="#shop-nengqiang">🧱 能强瓷砖岩板</a>
+    <a class="chip" href="#shop-huawei">🔌 华伟电器</a>
+    <a class="chip" href="#shop-niufulan">🛋️ 纽弗兰软装</a>
+    <a class="chip" href="#wall">🏷️ 28家品牌墙</a>
+  </nav>
+
+  <!-- ============ 商家福利 ============ -->
+  <div class="section-tag"><span class="bar">🔥 商家福利</span><span class="line"></span></div>
+
+  <!-- ============ 能强瓷砖岩板（会长单位·首页首位） ============ -->
+  <article class="shop" id="shop-nengqiang">
+    <div class="shop-head">
+      <span class="name">👑 能强瓷砖岩板</span>
+      <span class="tag">瓷砖 · 岩板 · 会长单位</span>
+    </div>
+    <div class="shop-body">
+      <div class="big-slogan">
+        <div class="y">绍兴卖砖29年</div>
+        <div class="s">GRIFINE 能强瓷砖 · 岩板包施工 · 1200㎡集合馆</div>
+      </div>
+      <img src="images/nq01.png" alt="能强瓷砖岩板集合馆门头：黑色金属狮鹫logo与发光字招牌，LED屏显示绍兴能强瓷砖欢迎您" width="1080" height="1920" loading="lazy">
+      <div class="deal">
+        <div class="deal-t">🔥 双节家装狂欢节 · 28家联盟同庆</div>
+        <div class="deal-d">瓷砖岩板联盟特惠价，岩板铺贴包施工！贴得稳岩板胶CCTV展播品牌，大板上墙更牢靠</div>
+      </div>
+      <div class="pill-list">
+        <span class="pill">750×1500大板</span>
+        <span class="pill">岩板包施工</span>
+        <span class="pill">全屋岩装</span>
+        <span class="pill">贴得稳总代理</span>
+        <span class="pill">1200㎡展厅</span>
+      </div>
+      <img src="images/nq02.jpg" alt="能强瓷砖店内前台形象墙：大理石背景墙配能强瓷砖GRIFINE发光logo，国庆国旗装饰" width="4000" height="2252" loading="lazy">
+      <img src="images/nq04.jpg" alt="能强瓷砖荣誉墙：副会长单位、放心消费培育单位、岩板铺装技术服务商等荣誉牌匾" width="4000" height="1868" loading="lazy">
+      <div class="addr"><span class="pin">📍</span><span>越城区二环北路48号·新大城家居广场北门口（绍兴广裕建材·能强瓷砖岩板集合馆）</span></div>
+      <div class="btns">
+        <button class="btn btn-call" type="button" onclick="window.location.href='tel:18358587666'">📞 电话咨询 18358587666</button>
+        <a class="btn btn-nav" target="_blank" rel="noopener noreferrer"
+           href="https://uri.amap.com/search?keyword=%E8%83%BD%E5%BC%BA%E7%93%B7%E7%A0%96%E5%B2%A9%E6%9D%BF&city=%E7%BB%8D%E5%85%B4&callnative=1">📍 导航到店</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- ============ 华伟电器 ============ -->
+  <article class="shop" id="shop-huawei">
+    <div class="shop-head">
+      <span class="name">华伟电器</span>
+      <span class="tag">家电 · 暖通</span>
+    </div>
+    <div class="shop-body">
+      <img src="images/hw01.jpg" alt="华伟电器全民家装节活动海报：红底熊猫家电图案，标注即买即送即安装" width="750" height="1334" loading="lazy">
+      <div class="deal">
+        <div class="deal-t">🔥 全民家装节 · 三店齐发</div>
+        <div class="deal-d">工厂直供价，即买即送即安装！正大店 · 柯桥店 · 城东店三店联动</div>
+        <span class="deal-time">⏰ 活动时间：9月1日—9月30日</span>
+      </div>
+      <div class="pill-list">
+        <span class="pill">美的全系</span>
+        <span class="pill">日立中央空调</span>
+        <span class="pill">智慧厨房</span>
+        <span class="pill">工厂直供</span>
+      </div>
+      <img src="images/hw02.png" alt="华伟电器门店实景：华伟门头、日立与美的智慧厨房展区" width="1080" height="810" loading="lazy">
+      <div class="addr"><span class="pin">📍</span><span>越城区正大南门店 ｜ 柯桥红星美凯龙5楼店 ｜ 城东建材城店</span></div>
+      <div class="btns">
+        <a class="btn btn-nav btn-full" target="_blank" rel="noopener noreferrer"
+           href="https://uri.amap.com/search?keyword=%E5%8D%8E%E4%BC%9F%E7%94%B5%E5%99%A8&city=%E7%BB%8D%E5%85%B4&callnative=1">📍 导航找店（三店任选）</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- ============ 纽弗兰软装 ============ -->
+  <article class="shop" id="shop-niufulan">
+    <div class="shop-head">
+      <span class="name">纽弗兰软装</span>
+      <span class="tag">全屋软装 · 24年老店</span>
+    </div>
+    <div class="shop-body">
+      <div class="big-slogan">
+        <div class="y">24年老店</div>
+        <div class="s">NEWFRIEND · 国际注册设计师整体搭配</div>
+      </div>
+      <img src="images/nfl01.jpg" alt="纽弗兰软装正大门店门头：NEWFRIEND纽弗兰软装·装饰设计全案整装" width="1707" height="1280" loading="lazy">
+      <div class="deal">
+        <div class="deal-t">🎁 双节到店礼：进店就送抱枕一个</div>
+        <div class="deal-d">艺术漆 · 硬包背景 · 墙布 · 窗帘 · 挂画 · 地毯，全屋软装一站配齐</div>
+      </div>
+      <div class="pill-list">
+        <span class="pill">艺术漆</span>
+        <span class="pill">硬包背景</span>
+        <span class="pill">墙布</span>
+        <span class="pill">窗帘</span>
+        <span class="pill">挂画</span>
+        <span class="pill">地毯</span>
+      </div>
+      <img src="images/nfl05.jpg" alt="纽弗兰软装前台：墨绿色艺术漆浮雕背景墙，银杏叶肌理造型" width="1707" height="1280" loading="lazy">
+      <img src="images/nfl12.jpg" alt="纽弗兰软装展厅：墨绿色丝绒沙发搭配斑马纹地毯，窗帘面料整体软装效果" width="1707" height="1329" loading="lazy">
+      <div class="addr"><span class="pin">📍</span><span>正大5号或6号观光电梯上三楼，出电梯直走30米，南3037号·纽弗兰软装</span></div>
+      <div class="btns">
+        <button class="btn btn-call" type="button" onclick="window.location.href='tel:13185574481'">📞 电话咨询 13185574481</button>
+        <a class="btn btn-nav" target="_blank" rel="noopener noreferrer"
+           href="https://uri.amap.com/search?keyword=%E7%BA%BD%E5%BC%97%E5%85%B0%E8%BD%AF%E8%A3%85&city=%E7%BB%8D%E5%85%B4&callnative=1">📍 导航到店</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- ============ 28家品牌墙 ============ -->
+  <div class="section-tag" id="wall"><span class="bar">🏷️ 28家联盟品牌墙</span><span class="line"></span></div>
+
+  <section class="wall" aria-label="28家联盟品牌名单">
+    <div class="wall-row"><span class="grp">一组</span><span class="brands"><span class="off">方正</span> · <span class="on">纽弗兰✓</span></span><span class="st st-ok">已就位</span></div>
+    <div class="wall-row"><span class="grp">二组</span><span class="brands"><span class="off">能强 · 都芳</span></span><span class="st st-wait">入驻中</span></div>
+    <div class="wall-row"><span class="grp">三组</span><span class="brands"><span class="off">汇盈 · 永吉</span></span><span class="st st-wait">入驻中</span></div>
+    <div class="wall-row"><span class="grp">四组</span><span class="brands"><span class="off">深度</span> · <span class="on">华伟✓</span></span><span class="st st-ok">已就位</span></div>
+    <div class="wall-row"><span class="grp">五组</span><span class="brands"><span class="off">优良 · 方太</span></span><span class="st st-wait">入驻中</span></div>
+    <div class="wall-row"><span class="grp">六组</span><span class="brands"><span class="off">莫干山 · 通用</span></span><span class="st st-wait">入驻中</span></div>
+    <div class="wall-row"><span class="grp">七组</span><span class="brands"><span class="off">齐家艺树 · 奥邦</span></span><span class="st st-wait">入驻中</span></div>
+    <div class="wall-row"><span class="grp">八组</span><span class="brands"><span class="off">法恩莎 · 喜之家</span></span><span class="st st-wait">入驻中</span></div>
+    <div class="wall-row"><span class="grp">九组</span><span class="brands"><span class="off">埃克森 · 小家电</span></span><span class="st st-wait">入驻中</span></div>
+    <div class="wall-row"><span class="grp">十组</span><span class="brands"><span class="off">贝克洛 · 施耐德</span></span><span class="st st-wait">入驻中</span></div>
+    <div class="wall-row"><span class="grp">十一组</span><span class="brands"><span class="off">约克 · 砖丽</span></span><span class="st st-wait">入驻中</span></div>
+    <div class="wall-row"><span class="grp">十二组</span><span class="brands"><span class="off">轩尼斯 · 富得利</span></span><span class="st st-wait">入驻中</span></div>
+    <div class="wall-row"><span class="grp">十三组</span><span class="brands"><span class="off">玫瑰岛 · 王力</span></span><span class="st st-wait">入驻中</span></div>
+    <div class="wall-row"><span class="grp">十四组</span><span class="brands"><span class="off">开能 · 荣泰</span></span><span class="st st-wait">入驻中</span></div>
+  </section>
+
+  <div class="progress-box">
+    <div class="pt">📋 品牌入驻进度</div>
+    <div class="progress-track"><div class="progress-fill"></div></div>
+    <div class="progress-num">已就位 2 / 28 家，其余品牌资料陆续更新中……</div>
+  </div>
+
+</main>
+
+<footer>
+  <div class="org">主办：绍兴装饰联合会</div>
+  <div>本手册福利均由各入驻商家提供，具体活动规则以各门店公示为准</div>
+</footer>
+
+<a class="totop" href="#top" aria-label="回到顶部">↑</a>
+
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(function(a){
+  a.addEventListener('click',function(e){
+    var t=document.querySelector(this.getAttribute('href'));
+    if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'});}
+  });
+});
+</script>
+</body>
+</html>
