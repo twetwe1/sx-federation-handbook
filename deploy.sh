@@ -4,7 +4,7 @@ set -e
 BASE=/usr/share/nginx/html
 mkdir -p $BASE/images
 cd $BASE
-V=20260904d
+V=20260904e
 REPO="twetwe1/sx-federation-handbook"
 COZE="https://www.coze.cn/s"
 
@@ -25,7 +25,7 @@ dl(){  # dl <本地路径> <coze短链ID> <仓库相对路径>
 }
 
 echo ">>> [1/3] 下载手册页面（方图版）..."
-dl index.html "8ovZZBlEIqA" "index.html"
+dl index.html "2Ny6FN0zUoI" "index.html"
 grep -q "绍兴装饰联合会" index.html || { echo "!! 页面异常，截图发闺女"; exit 1; }
 grep -q "HANDBOOK-V2-SQUARE" index.html && echo "  ✅ 方图版页面确认" || echo "  ⚠️ 页面版本可能不是最新，截图发闺女"
 
