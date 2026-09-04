@@ -6,10 +6,11 @@ mkdir -p $BASE/images
 cd $BASE
 
 REPO="twetwe1/sx-federation-handbook"
+V=20260904b
 MIRRORS=(
-  "https://cdn.jsdelivr.net/gh/$REPO@main"
-  "https://fastly.jsdelivr.net/gh/$REPO@main"
-  "https://raw.githubusercontent.com/$REPO/main"
+  "https://cdn.jsdelivr.net/gh/$REPO@main?v=$V"
+  "https://fastly.jsdelivr.net/gh/$REPO@main?v=$V"
+  "https://raw.githubusercontent.com/$REPO/main?v=$V"
 )
 
 dl(){  # dl <本地路径> <仓库相对路径>
