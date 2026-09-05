@@ -30,10 +30,10 @@ dl(){  # dl <本地路径> <coze短链ID> <仓库相对路径>
   if [ $ok -ne 1 ]; then echo "  ⚠️ 下载失败: $rel（截图发闺女）"; rm -f "$out.tmp"; fi
 }
 
-echo ">>> [1/4] 下载手册页面（7家版 V7 备案版）..."
-dl index.html "UMfPKIovSJc" "index.html"
+echo ">>> [1/4] 下载手册页面（8家版 V8 备案版）..."
+dl index.html "5MIRDbiEdUg" "index.html"
 grep -q "绍兴建材装饰联合会" index.html || { echo "!! 页面异常，截图发闺女"; exit 1; }
-grep -q "HANDBOOK-V7-7SHOPS-BEIAN" index.html && echo "  ✅ 备案版页面确认" || echo "  ⚠️ 页面版本可能不是最新，截图发闺女"
+grep -q "HANDBOOK-V8-8SHOPS-BEIAN" index.html && echo "  ✅ 备案版页面确认" || echo "  ⚠️ 页面版本可能不是最新，截图发闺女"
 
 if [ -z "$BEIAN" ]; then
   echo "!! 缺备案号参数，页面先保留占位（备案号下来后重跑此脚本并带上备案号）"
@@ -59,6 +59,8 @@ dl images/sd01.jpg  "gx8qgWT0QT0"  "images/sd01.jpg"
 dl images/sd02.jpg  "f0DCKtoZGww"  "images/sd02.jpg"
 dl images/fdl01.jpg "oBe3xpd692M"  "images/fdl01.jpg"
 dl images/fdl02.jpg "o5AlXrmRO5Y"  "images/fdl02.jpg"
+dl images/sl01.jpg  "1oYBjfJhW3E"  "images/sl01.jpg"
+dl images/sl02.jpg  "4NnjA9-Bc4Y"  "images/sl02.jpg"
 
 echo ">>> [3/4] 配置 nginx 站点（handbook.xiaohangkeji.com）..."
 cat > /etc/nginx/conf.d/handbook.conf <<'NGINX'
