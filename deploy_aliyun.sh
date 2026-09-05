@@ -59,7 +59,7 @@ dl images/sd01.jpg  "gx8qgWT0QT0"  "images/sd01.jpg"
 dl images/sd02.jpg  "f0DCKtoZGww"  "images/sd02.jpg"
 dl images/fdl01.jpg "oBe3xpd692M"  "images/fdl01.jpg"
 dl images/fdl02.jpg "o5AlXrmRO5Y"  "images/fdl02.jpg"
-dl images/sl01.jpg  "1oYBjfJhW3E"  "images/sl01.jpg"
+dl images/sl01.jpg  "06ohYeJrw2s"  "images/sl01.jpg"
 dl images/sl02.jpg  "4NnjA9-Bc4Y"  "images/sl02.jpg"
 
 echo ">>> [3/4] 配置 nginx 站点（handbook.xiaohangkeji.com）..."
