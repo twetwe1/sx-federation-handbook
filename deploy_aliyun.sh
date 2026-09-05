@@ -31,7 +31,7 @@ dl(){  # dl <本地路径> <coze短链ID> <仓库相对路径>
 }
 
 echo ">>> [1/4] 下载手册页面（8家版 V8 备案版）..."
-dl index.html "5MIRDbiEdUg" "index.html"
+dl index.html "ZYxAGzh2Dv4" "index.html"
 grep -q "绍兴建材装饰联合会" index.html || { echo "!! 页面异常，截图发闺女"; exit 1; }
 grep -q "HANDBOOK-V8-8SHOPS-BEIAN" index.html && echo "  ✅ 备案版页面确认" || echo "  ⚠️ 页面版本可能不是最新，截图发闺女"
 
