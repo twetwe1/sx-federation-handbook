@@ -33,7 +33,7 @@ dl(){  # dl <本地路径> <coze短链ID> <仓库相对路径>
 echo ">>> [1/4] 下载手册页面（12家版 V14）..."
 dl index.html "svNpjfUPw_8" "index.html"
 grep -q "绍兴建材装饰联合会" index.html || { echo "!! 页面异常，截图发闺女"; exit 1; }
-grep -q "HANDBOOK-V16-13SHOPS" index.html && echo "  ✅ 备案版页面确认" || echo "  ⚠️ 页面版本可能不是最新，截图发闺女"
+grep -q "HANDBOOK-V17-13SHOPS" index.html && echo "  ✅ 备案版页面确认" || echo "  ⚠️ 页面版本可能不是最新，截图发闺女"
 
 if [ -z "$BEIAN" ]; then
   echo "!! 缺备案号参数，页面先保留占位（备案号下来后重跑此脚本并带上备案号）"
