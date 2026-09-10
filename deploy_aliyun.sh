@@ -30,10 +30,10 @@ dl(){  # dl <本地路径> <coze短链ID> <仓库相对路径>
   if [ $ok -ne 1 ]; then echo "  ⚠️ 下载失败: $rel（截图发闺女）"; rm -f "$out.tmp"; fi
 }
 
-echo ">>> [1/4] 下载手册页面（14家版 V18）..."
+echo ">>> [1/4] 下载手册页面（15家版 V19）..."
 dl index.html "svNpjfUPw_8" "index.html"
 grep -q "绍兴建材装饰联合会" index.html || { echo "!! 页面异常，截图发闺女"; exit 1; }
-grep -q "HANDBOOK-V18-14SHOPS" index.html && echo "  ✅ 备案版页面确认" || echo "  ⚠️ 页面版本可能不是最新，截图发闺女"
+grep -q "HANDBOOK-V19-15SHOPS" index.html && echo "  ✅ 备案版页面确认" || echo "  ⚠️ 页面版本可能不是最新，截图发闺女"
 
 if [ -z "$BEIAN" ]; then
   echo "!! 缺备案号参数，页面先保留占位（备案号下来后重跑此脚本并带上备案号）"
@@ -42,7 +42,7 @@ else
   grep -q "$BEIAN" index.html && echo "  ✅ 备案号已挂到页脚：$BEIAN"
 fi
 
-echo ">>> [2/4] 下载30张商家图（全jpg）..."
+echo ">>> [2/4] 下载31张商家图（全jpg）..."
 dl images/nq01.jpg  "5vbXUt620vc"  "images/nq01.jpg"
 dl images/nq02.jpg  "-wpdRyDNt9g"  "images/nq02.jpg"
 dl images/nq04.jpg  "8mZxLTi5i58"  "images/nq04.jpg"
@@ -73,6 +73,7 @@ dl images/mgs01.jpg "xqb2CQOqzJ4" "images/mgs01.jpg"
 dl images/mgs02.jpg "x2G49Ijg9b0" "images/mgs02.jpg"
 dl images/aks01.jpg "N7uQyEvscf8" "images/aks01.jpg"
 dl images/aks02.jpg "1yegboo_lFM" "images/aks02.jpg"
+dl images/ft01.jpg  "9OoAc8d6usM" "images/ft01.jpg"
 
 echo ">>> [3/4] 配置 nginx 站点（handbook.xiaohangkeji.com）..."
 cat > /etc/nginx/conf.d/handbook.conf <<'NGINX'
