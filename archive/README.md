@@ -1,4 +1,6 @@
-- handbook_V32_20260917.html：V32 微信分享版（22家）：新增og:title/og:description/og:image(share.jpg二维码海报)，配合微信转发卡片与转发海报
+- handbook_V32_20260917.html：（未部署，由V33替代）
+- handbook_V33_20260917.html：V33 上线版（22家）：荣泰展会图换专卖店实景照（EXIF=0免转正）、删"整机2年全国联保"文案与标签；并入V32的og分享meta（V32未部署由V33直接替代）
+
 
 # 手册源文件归档（预览版·base64内嵌图）
 
