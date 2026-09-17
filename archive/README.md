@@ -1,7 +1,10 @@
 # 手册源文件归档（预览版·base64内嵌图）
 
-- handbook_V23_20260911.html：V23 最终版（19家，进度67.9%），含17喜之家、19奥邦新增卡及8号方正石材修正
+- handbook_V30_20260917.html：V30 上线版（22家商户，进度100%），09-17部署至 sj.xiaohangkeji.com
+  - 改动：能强页门头图裁白边放大居中；荣誉墙换展厅纵深竖版图（EXIF已转正）；顶部导航22家全平铺显示（字号12px）
+  - 云盘原件：/Coze/Drive/Agent的新项目（1）/双节活动资料/手册预览_V30_20260917.html
+- handbook_V23_20260911.html：V23 最终版（19家，进度67.9%），历史存档
   - 云盘原件：/Coze/Drive/Agent的新项目（1）/双节活动资料/手册预览_V23_20260911.html
-  - 用途：备份归档+组装部署版的源
-- ⚠️ 根目录 index.html 为部署版（V20外链版，20260911晚状态），部署链路勿动
-- 部署 V23 步骤：从 V23 预览版提取17/19卡图 → file_to_url 生成coze短链 → 组装外链版 index.html → 更新 deploy_aliyun.sh（页面短链+新增xj/ab图源）→ 阿里云 /var/www/handbook 重跑
+- ⚠️ 根目录 index.html 自 2026-09-17 起为 base64 内嵌部署版（V30，已填备案号 浙ICP备2025219535号-2），与线上 sj.xiaohangkeji.com 一致；V20外链版已弃用（服务器备份：/var/www/handbook/index.html.bak_V20_20260917）
+- 部署方式（V30起）：本地填备案号后 SFTP 直传 /var/www/handbook/index.html，免组装外链版；线上实测 base64 版 11.3MB 首开 0.49s
+- 旧 deploy_aliyun.sh / deploy.sh 为 V20 时代脚本，仅存档勿再执行
