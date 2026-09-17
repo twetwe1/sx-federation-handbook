@@ -1,3 +1,5 @@
+- handbook_V32_20260917.html：V32 微信分享版（22家）：新增og:title/og:description/og:image(share.jpg二维码海报)，配合微信转发卡片与转发海报
+
 # 手册源文件归档（预览版·base64内嵌图）
 
 - handbook_V31_20260917.html：V31 上线版（22家），09-17下午部署：能强卡头衔胶囊改「瓷砖 · 岩板」（爸要求去掉会长单位）
